@@ -74,6 +74,7 @@ header{
 }
 .info{
     position: relative;
+    height: 0;
     left: 0rem;
     top: 20rem;
     border-top: 3px solid black;
