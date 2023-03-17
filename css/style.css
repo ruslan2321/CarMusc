@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+body{
+    background-image: url(https://s3-alpha-sig.figma.com/img/edba/d158/5875731b6f0a892a920759bdcc3caa5d?Expires=1679875200&Signature=G1oZY7BNbsHM0rvSXFlw37V9gmefZAkYgOTIy~eNoJX81fDYmfnKWcpzP~WU8XiNcr7aoeHIt2NEuTQhj8EoPuDG17xh26hijqRYEk8ecCt4ho7MeYdym3rweLd5356WC4rUSVE5zdUvaCx596epD5bT2gy52YwgRypZjiw2qBPVbneiriDqbflLFNiO-PG5nt9AQsoEAAs2jxDszC45yp2S28RYQEyrevAhzhjDCZg9f3XZxSKg0wcZNXP8G-3gsHgoW-nCRY3ximgFzaiNwKeBxkOgbObDUTvmtYhw9q3jDniY2MgCzQIXx7vzC8~jBFvz9rQaopSkJR-RP9gDLQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4);
+    background-size: cover;
+    overflow-x: hidden;
+    
+}
+li ,a, p{
+    text-decoration: none;
+    list-style: none;
+    color: #ffffff;
+
+}
+header{
+    width: 100%;
+    height: 60px;
+    background-color: #000;
+    
+}
+.navbar{
+    position: relative;
+}
+.navbar a,li{
+    display: inline;
+    position: relative;
+    top: 9px;
+    left: 53px;
+    margin: 0 auto;
+    margin-left: 20px ;
+    font-size: 18px;
+    transition: 0.5s all ease-in-out;
+}
+.navbar a:hover{
+    color: #EC8B00;
+}
+.menu{
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 4px;
+    left: 74rem;
+    margin-top: 4px;
+    bottom: 5px;
+    background-color: red;
+}
+.logo{
+    position: relative;
+    text-align: center;
+    color: red;
+    top: 7rem;
+    font-size: 100px;}
+.romb{
+    display: inline-flex;
+    position: relative;
+    width: 10px;
+    height: 10px;
+    margin-left: 22px;
+    background: red;
+    top: 7rem;
+    left: 42rem;
+    transform: rotate(30deg);
+}
+.subtitle{
+    margin: 0;
+    position: relative;
+    left: 32rem;
+    top: 8rem;
+}
+.info{
+    position: relative;
+    left: 0rem;
+    top: 20rem;
+    border-top: 3px solid black;
+    
+}
+.number , .number-1 , .number-2{
+    position: relative;
+    left: 45rem;
+    bottom: 32px;
+    margin-top: 4px;
+}
+.number-1 , .number-2,.schedule-1,.schedule-2{
+    color: red;
+    font-weight: 600;
+}
+.addres{
+    position: relative;
+    left: 20rem;
+    top: 0rem;
+}
+.schedule,.schedule-1,.schedule-2{
+    position: relative;
+    left: 76rem;
+    bottom: 107px;
+}
+.btn-start{
+    position: relative;
+    width: 126px;
+    height: 46px;
+    left: 44rem;
+    top: 12rem;
+    font-size: 19px;
+    font-weight: 400;
+    color: white;
+    background-color: red;
+    border: 2px solid black;
+    overflow: none;
+    transition: 0.5s all ease-in-out;
+}
+.btn-start:hover{
+    background: rgba(0, 0, 0, 0);
+    color: rgb(250, 250, 250);
+}
