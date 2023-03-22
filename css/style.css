@@ -67,7 +67,7 @@ header{
     /* background-color: #00000052; */
     transition: 0.5s all ease-in-out;
     animation-name: text;
-    animation-duration: 3s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-timing-function: ease-in
@@ -179,12 +179,12 @@ header{
         -webkit-text-stroke:2px  #600101;
     }
     50%{
-        -webkit-text-stroke:2px  #700F68;
+        -webkit-text-stroke:2px  #fe031c;
     }
     60%{
-        -webkit-text-stroke: 2px#5420A2;
+        -webkit-text-stroke: 2px #d30101;
     }
     to{
-        -webkit-text-stroke:2px  #990000;
+        -webkit-text-stroke:2px  #640202;
     }
 }
