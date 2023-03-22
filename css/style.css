@@ -149,7 +149,8 @@ header{
     width: 100%;
 }
 
-span{
+.btn-start::after{
+    content: '';
     position: absolute;
     width:0;
     height: 100%;
@@ -159,8 +160,9 @@ span{
     transition: 0.5s all ease-in-out;
     border-radius: 18px;
     z-index: -2;
+    
 }
-.btn-start:hover span{
+.btn-start:hover::after{
     width: 100%;
 }
 .btn-start:hover{
