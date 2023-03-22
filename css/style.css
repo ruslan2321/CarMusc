@@ -62,10 +62,15 @@ header{
     /* color: red; */
     top: 7rem;
     font-size: 100px;
-    -webkit-text-stroke:2px  #ff0000a8;
+    -webkit-text-stroke:2px  #5D75E7;
     color: transparent;
     /* background-color: #00000052; */
     transition: 0.5s all ease-in-out;
+    animation-name: text;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in
 }
 .romb{
     display: inline-flex;
@@ -167,4 +172,19 @@ header{
 }
 .btn-start:hover{
     border: none;
+}
+
+@keyframes text {
+    from{
+        -webkit-text-stroke:2px  #600101;
+    }
+    50%{
+        -webkit-text-stroke:2px  #700F68;
+    }
+    60%{
+        -webkit-text-stroke: 2px#5420A2;
+    }
+    to{
+        -webkit-text-stroke:2px  #990000;
+    }
 }
