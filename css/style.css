@@ -13,7 +13,8 @@ body{
     
 }
 li ,a, p{
-   
+   font-family: 'Roboto' sans-serif;
+   font-weight: 500;
     text-decoration: none;
     list-style: none;
     color: #ffffff;
@@ -32,9 +33,9 @@ header{
     display: inline;
     position: relative;
     top: 9px;
-    left: 53px;
-    margin: 0;
-    padding: 0;
+    left: 35px;
+    margin: 0 auto;
+    padding-right:0;
     margin-left: 20px ;
     font-size: 18px;
     cursor:default;
@@ -50,16 +51,22 @@ header{
     width: 40px;
     height: 4px;
     left: 74rem;
-    margin-top: 4px;
-    bottom: 5px;
+    margin-bottom: 5px;
+    bottom: 7px;
     background-color: red;
+    z-index: 2;
 }
 .logo{
     position: relative;
     text-align: center;
-    color: red;
+    /* color: red; */
     top: 7rem;
-    font-size: 100px;}
+    font-size: 100px;
+    -webkit-text-stroke:2px  #ff0000a8;
+    color: transparent;
+    /* background-color: #00000052; */
+    transition: 0.5s all ease-in-out;
+}
 .romb{
     display: inline-flex;
     position: relative;
@@ -75,7 +82,7 @@ header{
     margin: 0;
     position: relative;
     left: 37rem;
-    top: 8rem;
+    top: 10rem;
     font-size: 20px;
     font-family: 'Oswald', sans-serif;
 }
@@ -109,51 +116,53 @@ header{
 }
 .btn-start{
     position: relative;
-    width: 126px;
+    width: 204px;
     height: 46px;
-    left: 44rem;
+    left: 41rem;
     top: 12rem;
     font-size: 19px;
     font-weight: 400;
     color: white;
-    background-color: rgba(255, 0, 0, 0);
-    border: 2px solid black;
+    background-color: transparent;
     overflow: none;
-    transition: 0.5s all ease-in-out;
-}
-.btn-start:hover{
-    color: black;
+    border-radius: 20px;
+    border: 2px solid #009BFF;
 }
 .img-logo{
     position: relative;
     left: 4rem;
     top: 35px;
+    
 }
 .navbar a::after{
     content: '';
     height: 2px;
     width: 0;
-    background: -webkit-linear-gradient(90deg, #d82b56,#be264c,#920c2d);background: linear-gradient(90deg, #d82b56,#be264c,#920c2d);
+    background: -webkit-linear-gradient(90deg, #1678f3,#0099ba,#1678f3);background: linear-gradient(90deg, #1678f3,#0099ba,#1678f3);
     position: absolute;
     left: 0;
     bottom: -3px;
+    border-radius: 10px;
     transition: 0.5s all ease-in-out;
 }
 .navbar a:hover::after{
     width: 100%;
 }
-.btn-start::after{
-    content: '';
+
+span{
     position: absolute;
-    width: 0;
-    height: 44px;
-    background: -webkit-linear-gradient(90deg, #c3284d,#f76463);background: linear-gradient(90deg, #c3284d,#f76463);
+    width:0;
+    height: 100%;
     left: 0;
-    bottom: 0;
-    z-index: -2;
+    top: 0;
+    background-color: #009BFF;
     transition: 0.5s all ease-in-out;
+    border-radius: 18px;
+    z-index: -2;
 }
-.btn-start:hover::after{
+.btn-start:hover span{
     width: 100%;
-    
+}
+.btn-start:hover{
+    border: none;
 }
