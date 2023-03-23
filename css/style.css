@@ -47,23 +47,38 @@ header{
 }
 .search{
     position: relative;
-    left: 14rem;
+    left: 5rem;
     top: 16px;
-    width: 200px;
-    height: 28px;
+    width: 30px;
+    height: 30px;
     outline: none;
     border: none;
     border-radius: 20px;
-    background-color: #ffffff75;
+    background-color: #ffffff00;
+    color: transparent;
     transition: 0.5s all ease-in-out;
+
+
+
 }
 .search:focus{
     background-color: #ffffff;
-}
-.search::placeholder{
+    width: 200px;
     color: black;
 }
-.search::a
+.search::placeholder{
+    color: transparent;
+}
+
+.search-img{
+    position: relative;
+    left: 53px;
+    top: 21px;
+    width: 24px;
+    height: 25px;
+    margin: 0;
+    z-index: -1;
+}
 .menu{
     position: relative;
     display: block;
@@ -74,6 +89,7 @@ header{
     bottom: 7px;
     background-color: red;
     z-index: 2;
+    color: white;
 }
 .logo{
     position: relative;
