@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/pngwing.com.png" type="image/x-icon">
+    <script src="js/script.js"></script>
     <title>CarMusc</title>
 </head>
-<body>
+<body id="body">
         <nav class="navbar">
             <img src="img/pngwing.com.png" alt="" class="img-logo">
             <li><a href="#" onclick="Click()">Главное</a></li>
@@ -19,6 +20,10 @@
             <div class="menu"></div>
             <div class="menu"></div>
             <div class="menu"></div>
+            <div class="content">
+                <input type="checkbox" id="check" onclick="Cheked()">
+                <label for="check" class="btn"></label>
+            </div>
         </nav>  
     <h1 class="logo">CAR MUSC</h1>
     <div class="romb"></div>
@@ -36,6 +41,5 @@
         <p class="schedule-1">пн-пт : 10:00 - 20:00</p>
         <p class="schedule-2">сб-вск : 12:00 - 20:00</p>
     </div>
-   <script src="js/script.js"></script>
 </body>
 </html>
