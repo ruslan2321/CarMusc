@@ -175,7 +175,7 @@ header{
     top: 35px;
     
 }
-.navbar a::after{
+.navbar .a-header::after{
     content: '';
     height: 2px;
     width: 0;
@@ -186,10 +186,9 @@ header{
     border-radius: 10px;
     transition: 0.5s all ease-in-out;
 }
-.navbar a:hover::after{
+.navbar .a-header:hover::after{
     width: 100%;
 }
-
 .btn-start::after{
     content: '';
     position: absolute;
@@ -209,7 +208,7 @@ header{
 .btn-start:hover{
     border: none;
 }
-
+/* Анимация текста */
 @keyframes text {
     from{
         -webkit-text-stroke:2px  #600101;
@@ -226,11 +225,11 @@ header{
 }
 
 
-
+/*Переключатель  */
 .content{
     position: relative;
-    left: 65rem;
-    bottom: 2.7rem;
+    left: 63rem;
+    bottom: 4.5rem;
     display: flex;
 }
 
@@ -261,4 +260,115 @@ input[type='checkbox']:checked + .btn{
 }
 input[type='checkbox']:checked + .btn::before{
     transform: translateX(33px);
+}
+.profile{
+    background-image: url(../img/user\ .png);
+    position: relative;
+    width: 32px;
+    height: 32px;
+    left: 70rem;
+    bottom: 2.5rem;
+    border: none;
+    z-index: 2;
+    transition: 0.5s;
+}
+
+.profile:hover{
+    background-image: url(../img/user_login.png);
+}
+
+
+.text-pup{
+    visibility: hidden;
+    display: block;
+    width: 91rem;
+    height: 44rem;
+    background-color: #000000de;
+    z-index: 3;
+    text-align: center;
+    position: absolute;
+    bottom: -128px;
+    left: -38rem;
+}
+.btn-start .text-pup::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border: color #000000;
+}
+.btn-start .show{
+    visibility: visible;
+    animation: fadeIn 1s ;
+    transition: 0.5s all ease-in-out;
+}
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+.text-pup p{
+    margin: 20px;
+    transition: 0.5s ;
+    position: relative;
+    display: inline;
+    left: 0;
+}
+
+.pop-profile{
+    visibility: hidden;
+    display: block;
+    width: 9rem;
+    height: 10rem;
+    background-color: #000000;
+    z-index: 3;
+    text-align: center;
+    position: absolute;
+    top: 2rem;
+    left: -3rem;
+    border-radius: 10px;
+}
+.profile .pop-profile::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border: color #000000;
+}
+.profile .show-profile{
+    visibility: visible;
+    animation: fadeIn 1s ease-in-out;
+    transition: 0.5s all ease-in-out;
+} 
+.pop-profile button{
+   width: 92px;
+    height: 34px;
+    top: 0;
+    border-radius: 20px;
+    position: relative;
+    left: 0px;
+    display: block;
+    margin: 27px;
+    justify-content: center;
+    justify-items: center;
+    background-color: inherit;
+    border: 2px solid white;
+    color: white;
+    border-color:#E97F94;
+    transition: 0.5s;
+    
+}
+.pop-profile button:first-child{
+    border-color: #1463ca;
+}
+.pop-profile button:first-child:hover{
+    background-color:  #1463ca;
+}
+.pop-profile button:hover{
+    background-color: #E97F94;
 }

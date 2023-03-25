@@ -12,18 +12,24 @@
 <body id="body">
         <nav class="navbar">
             <img src="img/pngwing.com.png" alt="" class="img-logo">
-            <li><a href="#" onclick="Click()">Главное</a></li>
-            <li><a href="#" onclick="Click()">Оклейка автомобилей</a></li>
-            <li><a href="#" onclick="Click()">Детейлинг автомобилей</a></li> 
-            <li><a href="#" onclick="Click()">Галерея работ</a></li>
+            <li><a href="#" onclick="Click()" class="a-header">Главное</a></li>
+            <li><a href="#" onclick="Click()" class="a-header">Оклейка автомобилей</a></li>
+            <li><a href="#" onclick="Click()" class="a-header">Детейлинг автомобилей</a></li> 
+            <li><a href="#" onclick="Click()"class="a-header">Галерея работ</a></li>
             <input type="text" class="search" placeholder="Поиск..." maxlength="30"><img class="search-img" src="img/icons8-лупа-32.png">
             <div class="menu"></div>
             <div class="menu"></div>
             <div class="menu"></div>
-            <!-- <div class="content">
+            <div class="profile" onclick="profile()">
+                <span class="pop-profile" id="pop-profile">
+                    <button class="btn-1">Войти</button>
+                    <button class="btn-2">Регестрация</button>
+                </span>
+            </div>
+            <div class="content">
                 <input type="checkbox" id="check" onclick="Cheked()">
                 <label for="check" class="btn"></label>
-            </div> -->
+            </div>
         </nav>  
     <h1 class="logo">CAR MUSC</h1>
     <div class="romb"></div>
@@ -31,7 +37,14 @@
     <div class="romb"></div>
     <div class="romb"></div>
     <p class="subtitle">Тут должен быть текст, но я не придумал какой </p>
-    <a href="#"><button class="btn-start" onclick="Click()">Наши Услуги</button></a>
+    <button class="btn-start" onclick="Click()">Наши Услуги <span class="text-pup" id="pup">
+        <h1>Услуги</h1>
+        <p>Тюнинг</p>
+        <p>Покраска</p>
+        <p>ТЕкст</p>
+        <p>ТЕкст</p>
+        <p>Текст</p>
+    </span></button>
     <div class="info">
         <p class="addres">Адрес:</p>
         <p class="number">Номер:</p>
