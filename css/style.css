@@ -9,7 +9,7 @@
 }
 body{
     overflow-y: hidden;
-    background-image: url(https://s3-alpha-sig.figma.com/img/edba/d158/5875731b6f0a892a920759bdcc3caa5d?Expires=1679875200&Signature=G1oZY7BNbsHM0rvSXFlw37V9gmefZAkYgOTIy~eNoJX81fDYmfnKWcpzP~WU8XiNcr7aoeHIt2NEuTQhj8EoPuDG17xh26hijqRYEk8ecCt4ho7MeYdym3rweLd5356WC4rUSVE5zdUvaCx596epD5bT2gy52YwgRypZjiw2qBPVbneiriDqbflLFNiO-PG5nt9AQsoEAAs2jxDszC45yp2S28RYQEyrevAhzhjDCZg9f3XZxSKg0wcZNXP8G-3gsHgoW-nCRY3ximgFzaiNwKeBxkOgbObDUTvmtYhw9q3jDniY2MgCzQIXx7vzC8~jBFvz9rQaopSkJR-RP9gDLQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4);
+    background-image: url();
     background-size: cover;
     overflow-x: hidden;
     
@@ -170,9 +170,9 @@ header{
     font-weight: 400;
     color: white;
     background-color: transparent;
-    overflow: none;
     border-radius: 20px;
     border: 2px solid #009BFF;
+    transition: 0.2s all ease-in-out;
 }
 .img-logo{
     position: relative;
@@ -194,10 +194,10 @@ header{
 .a-header:hover::after{
     width: 100%;
 }
-.btn-start::after{
+/* .btn-start::after{
     content: '';
     position: absolute;
-    width:0;
+    width: 100%;
     height: 100%;
     left: 0;
     top: 0;
@@ -206,13 +206,11 @@ header{
     border-radius: 18px;
     z-index: -2;
     
-}
-.btn-start:hover::after{
-    width: 100%;
-}
+} */
 .btn-start:hover{
-    border: none;
+    background-color: #009BFF;
 }
+
 /* Анимация текста */
 @keyframes text {
     from{
@@ -390,4 +388,11 @@ input[type='checkbox']:checked + .btn::before{
 }
 .profile:hover button{
     opacity: 20;
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
 }
