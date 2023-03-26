@@ -194,21 +194,9 @@ header{
 .a-header:hover::after{
     width: 100%;
 }
-/* .btn-start::before{
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background-color: #009BFF;
-    transition: 0.5s all ease-in-out;
-    border-radius: 18px;
-    z-index: -2;
-    
-} */
 .btn-start:hover{
-    background-color: #009BFF;
+    background-color: #1678f3;
+    border-style: none;
 }
 
 /* Анимация текста */
