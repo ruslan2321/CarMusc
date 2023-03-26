@@ -335,7 +335,10 @@ input[type='checkbox']:checked + .btn::before{
     font-size: 40px;
     
 }
-.popup__text{}
+.popup__text{
+    font-family: 'Roboto' ,sans-serif;
+    font-weight: 500;
+}
 
 
 
