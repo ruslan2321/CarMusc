@@ -194,7 +194,7 @@ header{
 .a-header:hover::after{
     width: 100%;
 }
-/* .btn-start::after{
+/* .btn-start::before{
     content: '';
     position: absolute;
     width: 100%;
